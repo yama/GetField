@@ -55,7 +55,7 @@ $gfIntTopDocId = (isset($topid) && is_int((int) $topid)) ? $topid : 0;
 ----------------------------------------------- */
 
 # Include logic
-include_once('assets/snippets/getfield/getfield.inc.php');
+include_once($modx->config['base_path'] . 'assets/snippets/getfield/getfield.inc.php');
 
 # Get parent document ID
 if ($gfBoolParent)
